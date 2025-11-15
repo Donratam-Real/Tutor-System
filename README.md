@@ -1,47 +1,5 @@
-tutor-booking-system/                  <-- Root Directory (Project Name)
-├── .gitignore                         <-- ไฟล์สำหรับ Git เพื่อละเว้นไฟล์ที่ไม่จำเป็น (เช่น /target, *.class)
-├── pom.xml                            <-- Maven Build File (กำหนด Dependencies, Plugins)
-├── Dockerfile                         <-- ไฟล์สำหรับสร้าง Docker Image
-├── README.md                          <-- สรุปภาพรวมและวิธีการรันโปรเจกต์ (เราได้ร่างไว้แล้ว)
-├── deploy/
-│   └── docker-compose.yml             <-- สำหรับรัน App + Database ใน Dev Environment
-│
-└── src/
-    └── main/
-        ├── java/
-        │   └── com/
-        │       └── tutos/             <-- Root Java Package
-        │           ├── TutoSApplication.java  <-- Main Spring Boot Application Class
-        │           ├── user/          <-- 👤 1. User/Profile Module
-        │           │   ├── controller/      <-- REST API Endpoints (Auth, Profile)
-        │           │   ├── model/           <-- Entities (User, TutorProfile)
-        │           │   ├── repository/      <-- Spring Data JPA Interfaces
-        │           │   └── service/         <-- Business Logic (Authentication, Profile Management)
-        │           │
-        │           ├── search/        <-- 🔍 2. Search & Filter Module
-        │           │   ├── controller/
-        │           │   └── service/         <-- Search Logic, Dynamic Queries
-        │           │
-        │           ├── booking/       <-- 📅 3. Booking/Calendar Module
-        │           │   ├── controller/
-        │           │   ├── model/           <-- Entities (Slot, Booking)
-        │           │   ├── repository/
-        │           │   └── service/         <-- Booking & Transaction Logic
-        │           │
-        │           ├── review/        <-- ⭐ 4. Review & Rating Module
-        │           │   ├── controller/
-        │           │   ├── model/           <-- Entities (Review, TutorAggregateRating)
-        │           │   ├── repository/
-        │           │   └── service/         <-- Review & Rating Calculation Logic
-        │           │
-        │           └── shared/        <-- Shared components (เช่น JWT Utils, Global Exception Handlers)
-        │               ├── config/          <-- Spring Security Configuration
-        │               └── exception/       <-- Custom Exceptions
-        │
-        └── resources/
-            ├── application.yml        <-- Global Configuration (DB, Port, JWT Secret)
-            ├── data.sql               <-- Initial data script (Optional)
-            └── static/                <-- For static frontend files (ถ้าใช้)
+<img width="627" height="741" alt="image" src="https://github.com/user-attachments/assets/f7c8e3de-914a-4eaa-8573-3ded38001d17" />
+
 
 
 
